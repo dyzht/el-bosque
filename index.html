@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Bosque - Investigación Forense</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <img src="logo1.jpeg" alt="El Bosque" class="logo">
+  <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#imagenes">Imágenes</a></li>
+      <li><a href="#relatos">Relatos</a></li>
+      <li><a href="#comentarios">Comentarios</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="contador">
+  <h2>Faltan 100 Dias</h2>
+  <div id="counter">Cargando...</div>
+</section>
+
+<section id="videos"><h2>Videos</h2><div id="videoPreview"></div></section>
+<section id="imagenes"><h2>Imágenes</h2>
+  <img src="bosque.jpeg" alt="500px" height="500px">
+  <div id="imagePreview"></div>
+</section>
+<section id="relatos"><h2>Relatos</h2>
+  <p>Aca iría el relato forense o investigación sobre el caso. Detalles, cronologías, hipótesis y material.</p>
+</section>
+
+<section id="comentarios"><h2>Comentarios</h2>
+  <div class="comment-form">
+    <input type="text" id="username" placeholder="Tu nombre...">
+    <textarea id="commentInput" placeholder="Escribe tu comentario..."></textarea>
+    <button onclick="addComment()">Publicar</button>
+  </div>
+
+  <div class="admin-login">
+    <input type="password" id="adminPass" placeholder="Contraseña admin">
+    <button onclick="loginAdmin()">Entrar como Admin</button>
+    <button id="logoutBtn" onclick="logoutAdmin()" style="display:none;">Salir de Admin</button>
+  </div>
+
+  <div id="commentSection"></div>
+</section>
+
+<section id="redes">
+  <h2>Redes y Contacto</h2>
+  <p class="info">Síguenos en nuestras redes sociales.</p>
+  <p class="info">© 2025 El Bosque. Todos los derechos reservados ®</p>
+  <p class="info">Contacto: info@elbosque.com</p>
+</section>
+
+<!-- Botón para activar ambiente paranormal -->
+<button id="ambientBtn">Activar</button>
+<audio id="ambientAudio" loop src="audio_bosque.mp3"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
